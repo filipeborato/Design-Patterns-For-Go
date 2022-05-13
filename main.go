@@ -8,10 +8,10 @@ import (
 )
 
 func main() {
-	teste()
+	testeProvider()
 }
 
-func teste() {
+func testeProvider() {
 	f := provider.Wrapcache(provider.Pi, &sync.Map{})
 	g := provider.Wraplogger(f, log.New(os.Stdout, "Test ", 1))
 
