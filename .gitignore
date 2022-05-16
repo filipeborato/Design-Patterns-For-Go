@@ -12,4 +12,5 @@ node_modules
 .vscode/*
 cmd/api/__debug_bin
 __debug_bin
+designer-for-golang
 
