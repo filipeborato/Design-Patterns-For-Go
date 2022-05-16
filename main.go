@@ -1,14 +1,30 @@
 package main
 
 import (
+	"bufio"
 	"designer-for-golang/provider"
+	"fmt"
 	"log"
 	"os"
+	"strings"
 	"sync"
 )
 
 func main() {
-	testeProvider()
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Println("Digite o método do padrão a ser testado")
+	fmt.Println("---------------------")
+
+	fmt.Print("-> ")
+	text, _ := reader.ReadString('\n')
+	// convert CRLF to LF
+	text = strings.Replace(text, "\n", "", -1)
+
+	fmt.Println("---------------------")
+
+	if strings.Compare("provider", text) == 0 {
+		testeProvider()
+	}
 }
 
 func testeProvider() {
