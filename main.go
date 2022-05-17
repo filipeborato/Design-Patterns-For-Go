@@ -12,6 +12,8 @@ func main() {
 	switch text {
 	case "provider":
 		test.TestProvider()
+	case "observer":
+		print("nao implementado ainda")
 	default:
 		fmt.Print("Método desconhecido")
 	}
