@@ -16,6 +16,8 @@ func main() {
 		test.TestGenerator()
 	case "observer":
 		test.TesteObserver()
+	case "factory":
+		test.TestFactory()
 	default:
 		fmt.Print("Método desconhecido")
 	}
