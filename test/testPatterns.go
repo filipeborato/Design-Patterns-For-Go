@@ -1,7 +1,9 @@
 package test
 
 import (
+	"designer-for-golang/generator"
 	"designer-for-golang/provider"
+	"fmt"
 	"log"
 	"os"
 	"sync"
@@ -22,4 +24,10 @@ func TestProvider() {
 	g(2000)
 	g(10)
 	g(10000)
+}
+
+func TestGenerator() {
+	for x := range generator.Fib(10000000) {
+		fmt.Println(x)
+	}
 }
