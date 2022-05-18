@@ -2,6 +2,7 @@ package test
 
 import (
 	"designer-for-golang/generator"
+	"designer-for-golang/observer"
 	"designer-for-golang/provider"
 	"fmt"
 	"log"
@@ -30,4 +31,8 @@ func TestGenerator() {
 	for x := range generator.Fib(10000000) {
 		fmt.Println(x)
 	}
+}
+
+func TesteObserver() {
+	observer.Test()
 }
