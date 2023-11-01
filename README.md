@@ -9,9 +9,9 @@ This project is a study of some types of design patterns for Golang.
 - Provider
 
 ## Go Version on the project was made:
-```
+`
 V1.16
-```
+`
 
 ## How to run the project:
 ```
