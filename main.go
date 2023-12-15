@@ -19,6 +19,6 @@ func main() {
 	case "factory":
 		test.TestFactory()
 	default:
-		fmt.Print("Método desconhecido")
+		fmt.Print("Unknow Method")
 	}
 }
